@@ -1,0 +1,183 @@
+
+
+body {
+    margin: 0;
+    background-color: #E6E1DC;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+    margin-top: 90px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #4d3827;
+}
+
+h3 {
+    color: #6b4b33;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: mediumslateblue;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+nav label {
+    display: none;
+}
+
+
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #d4c4b2;
+}
+
+code {
+    display: block;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #c7b49c;
+    border-radius: 4px;
+}
+
+
+
+footer {
+    margin: 40px auto 20px;
+    max-width: 1100px;
+    background-color: #987a59;
+    color: #f7f0e5;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    nav {
+        width: 90%;
+        justify-content: space-between;
+        padding: 8px 16px;
+    }
+
+
+    nav label {
+        display: block;
+        font-size: 2rem;
+        color: #333;
+        cursor: pointer;
+        background-color: #fff7d6;
+        padding: 4px 10px;
+        border-radius: 10px;
+    }
+
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+
+        background-color: rgba(255, 255, 255, 0.97);
+        padding: 10px 20px;
+        border-radius: 14px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    #toggle:checked + .menu {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-top: 80px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 12px 0;
+        width: 90%;
+    }
+}
